@@ -1,0 +1,66 @@
+@import './variables.scss';
+
+.app {
+    width:100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+    font-family: 'Nunito Sans', sans-serif;
+    &Container {
+        display: flex;
+        flex-direction: column;
+        background-color: $primary;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        background: $secondary;
+        padding: 20px;
+    }
+    &-header {
+        > h1 {
+        background: -webkit-linear-gradient(rgba(245,202,191,0) 60%, $decor 65%); 
+        display: inline; 
+        font-weight: 600;
+        }
+        h2 {
+         font-weight: 400;
+        }
+    }
+
+    &-body {
+        &-content{
+            margin-top: 5px;
+            > h1 {
+                margin: 0;
+            }
+            padding: 20px;
+            background: $container;
+            border: 1px solid $decor;
+        }
+    }
+    &-servey {
+        h1 {
+            background: -webkit-linear-gradient(rgba(245,202,191,0) 60%, $decor 65%); 
+            display: inline; 
+            font-weight: 600;
+        }
+        &-content {
+            padding: 20px 0px;
+            > label, input, button {
+                margin: 2px;
+            }
+            &-button{
+            padding: 10px 20px;
+            background: $primary;
+            border:none;
+            font-weight: 600;
+            &:hover {
+             background-color: $decor;  
+            }
+            }
+        }
+    }
+}
